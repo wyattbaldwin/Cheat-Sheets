@@ -1,3 +1,22 @@
+SELECT
+•	Select all columns: SELECT * FROM table_name
+•	Select specific columns: SELECT column_name1, column_name2 FROM table_name
+•	Select distinct rows: SELECT DISTINCT column_name FROM table_name
+WHERE
+•	Select rows with a specific value: SELECT * FROM table_name WHERE column_name = 'value'
+•	Select rows with multiple specific values: SELECT * FROM table_name WHERE column_name IN ('value1', 'value2', 'value3')
+•	Select rows with a value within a range: SELECT * FROM table_name WHERE column_name BETWEEN start AND end
+•	Select rows with a value that matches a pattern: SELECT * FROM table_name WHERE column_name LIKE 'pattern'
+LIMIT
+•	Select a limited number of rows: SELECT * FROM table_name LIMIT number
+•	Select a limited number of rows starting from an offset: SELECT * FROM table_name LIMIT number OFFSET offset
+ORDER BY
+•	Select rows and sort ascending by a column: SELECT * FROM table_name ORDER BY column_name ASC
+•	Select rows and sort descending by a column: SELECT * FROM table_name ORDER BY column_name DESC
+GROUP BY
+•	Select rows and group by a column: SELECT *, COUNT(*) FROM table_name GROUP BY column_name
+HAVING
+•	Select rows and group by a column, filtering by a condition: `SELECT , COUNT() FROM table_name GROUP BY
 INSERT
 •	Insert a row: INSERT INTO table_name (column_name1, column_name2) VALUES ('value1', 'value2')
 UPDATE
