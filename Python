@@ -33,3 +33,24 @@ Copy code
 class ClassName: def __init__(self, arg1, arg2): # do something def method(self): # do something 
 •	Create an instance of a class: instance = ClassName(arg1, arg2)
 •	Call a method: instance.method()
+Decorators
+•	Decorators are functions that modify the behavior of other functions.
+•	Example:
+Copy code
+def decoratorFunction(function): def wrapper(*args, **kwargs): print('Function called.') return function(*args, **kwargs) return wrapper @decoratorFunction def exampleFunction(arg1, arg2): print(arg1 + arg2) exampleFunction(1, 2) # Outputs: "Function called. 3" 
+Generators
+•	Generators are functions that generate a sequence of values, one at a time, when iterated over.
+•	Example:
+Copy code
+def generatorFunction(n): for i in range(n): yield i for i in generatorFunction(5): print(i) # Outputs: 0 1 2 3 4 
+Context Managers
+•	Context managers allow the use of the with statement to automatically manage resources (e.g. file streams).
+•	Example:
+Copy code
+from contextlib import contextmanager @contextmanager def openFile(filename, mode): f = open(filename, mode) yield f f.close() with openFile('file.txt', 'w') as f: f.write('Hello, world!') 
+Classmethods and Staticmethods
+•	Classmethods are methods that are bound to the class and not the instance of the class.
+•	Staticmethods are methods that do not have access to the instance or the class.
+•	Example:
+Copy code
+class ExampleClass: def regularMethod(self): print(self) @classmethod def classMethod(cls): print(cls) @staticmethod def staticMethod(): print('static method called.') example = ExampleClass() example.regularMethod() # Outputs: <__main__.ExampleClass object at 0x7f9b39d8d940> example.classMethod() # Outputs: <class '__main__.ExampleClass'> example.staticMethod() # Outputs: "static method called."
