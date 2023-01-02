@@ -1,0 +1,54 @@
+Variables
+•	Declare a variable with let or const
+•	let allows you to reassign a value to a variable
+•	const is used for variables that cannot be reassigned
+Data Types
+•	JavaScript has the following data types:
+•	numbers (e.g. 1, 3.14)
+•	strings (e.g. "hello", 'world')
+•	booleans (e.g. true, false)
+•	null (representing the absence of a value)
+•	undefined (representing a variable that has not been assigned a value)
+•	objects (more on this later)
+•	Use typeof to determine the type of a value
+Arrays
+•	Declare an array using square brackets (e.g. let arr = [1, 2, 3])
+•	Access an element in an array using its index (e.g. arr[0] returns 1)
+•	Use .length to determine the number of elements in an array
+Objects
+•	Declare an object using curly braces (e.g. let obj = {key: value})
+•	Access a value in an object using its key (e.g. obj.key returns value)
+•	You can also use brackets to access a value in an object (e.g. obj['key'] returns value)
+Functions
+•	Declare a function using the function keyword, followed by the name of the function, and a set of parentheses (e.g. function add(a, b) {...})
+•	Call a function by using its name followed by a set of parentheses (e.g. add(1, 2))
+•	Use the return keyword to return a value from a function
+Control Flow
+•	Use if statements to execute a block of code if a certain condition is true
+•	Use else if to add additional conditions
+•	Use else to execute a block of code if all other conditions are false
+•	Use switch statements to execute a block of code based on the value of a variable
+Loops
+•	Use for loops to execute a block of code a specific number of times
+•	Use while loops to execute a block of code while a certain condition is true
+•	Use do...while loops to execute a block of code at least once, and then continue to execute it as long as a certain condition is true
+Closures
+•	Closures are functions that have access to the parent scope, even after the parent function has completed execution.
+•	Example:
+Copy code
+function parentFunction(param) { var variable = 'local variable'; function childFunction() { console.log(param + ' ' + variable); } return childFunction; } var closure = parentFunction('param value'); closure(); // Outputs: "param value local variable" 
+Prototypal Inheritance
+•	JavaScript uses prototypal inheritance, in which an object can inherit properties and methods from a prototype object.
+•	Example:
+Copy code
+function Animal(name) { this.name = name; } Animal.prototype.speak = function() { console.log(this.name + ' makes a noise.'); } function Dog(name) { Animal.call(this, name); } Dog.prototype = Object.create(Animal.prototype); Dog.prototype.constructor = Dog; Dog.prototype.bark = function() { console.log(this.name + ' barks.'); } var dog = new Dog('Fido'); dog.speak(); // Outputs: "Fido makes a noise." dog.bark(); // Outputs: "Fido barks." 
+Async/Await
+•	Async/await allows for asynchronous code to be written in a synchronous-style.
+•	Example:
+Copy code
+async function asyncFunction() { try { const result = await someAsyncCall(); console.log(result); } catch (error) { console.error(error); } } 
+Generators
+•	Generators are functions that can be paused and resumed, allowing for the creation of iterators.
+•	Example:
+Copy code
+function* generatorFunction() { yield 'first'; yield 'second'; return 'done'; } const generator = generatorFunction(); console.log(generator.next()); // Outputs: { value: 'first', done: false } console.log(generator.next()); // Outputs: { value: 'second', done: false } console.log(generator.next()); // Outputs: { value: 'done', done: true }
