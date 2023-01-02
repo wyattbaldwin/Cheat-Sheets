@@ -1,0 +1,35 @@
+Data Types
+•	Integer: a = 5
+•	Float: b = 5.5
+•	String: c = "hello"
+•	Boolean: d = True
+Lists
+•	Declare a list: a = [1, 2, 3]
+•	Access an element in a list: a[0] returns 1
+•	Append to a list: a.append(4)
+•	Remove from a list: a.remove(2)
+Dictionaries
+•	Declare a dictionary: a = {'key': 'value'}
+•	Access a value in a dictionary: a['key'] returns 'value'
+•	Set a value in a dictionary: a['key'] = 'new value'
+Control Flow
+•	If statement:
+Copy code
+if condition: # do something elif condition: # do something else else: # do something else 
+•	For loop:
+Copy code
+for element in iterable: # do something 
+•	While loop:
+Copy code
+while condition: # do something 
+Functions
+•	Declare a function:
+Copy code
+def function_name(arg1, arg2): # do something return result 
+•	Call a function: function_name(arg1, arg2)
+Classes
+•	Declare a class:
+Copy code
+class ClassName: def __init__(self, arg1, arg2): # do something def method(self): # do something 
+•	Create an instance of a class: instance = ClassName(arg1, arg2)
+•	Call a method: instance.method()
