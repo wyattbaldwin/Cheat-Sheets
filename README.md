@@ -13,5 +13,4 @@ How to use
 Each cheat sheet is provided in the form of a PDF file. Simply download the cheat sheet that you need and use it as a reference while programming.
 
 Contributing
-
 If you would like to contribute to this repository, please fork the repository and create a pull request with your changes. All contributions are welcome!
