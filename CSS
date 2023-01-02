@@ -1,0 +1,34 @@
+Text
+•	font-size: sets the size of the text
+•	font-family: sets the font of the text
+•	color: sets the color of the text
+•	text-align: sets the alignment of the text (e.g. left, right, center)
+•	text-decoration: sets the decoration of the text (e.g. underline, overline, line-through)
+Box
+•	width: sets the width of the element
+•	height: sets the height of the element
+•	padding: adds space within the element
+•	margin: adds space outside the element
+•	border: adds a border around the element
+•	background-color: sets the background color of the element
+Layout
+•	display: sets the type of box the element should use (e.g. block, inline, flex)
+•	float: floats the element to the left or right
+•	position: sets the position of the element (e.g. static, relative, absolute)
+•	top, right, bottom, left: sets the position of the element relative to its parent
+Typography
+•	letter-spacing: sets the space between letters
+•	line-height: sets the space between lines
+•	text-indent: sets the indentation of the first line of text
+•	text-transform: sets the case of the text (e.g. uppercase, lowercase, capitalize)
+Other
+•	cursor: sets the cursor when hovering over the element (e.g. pointer, default)
+•	opacity: sets the transparency of the element
+•	overflow: sets what to do if the content is too large for the element (e.g. visible, hidden, scroll)
+Pseudo-classes
+•	:hover: applies a style when hovering over the element
+•	:active: applies a style when the element is being clicked
+•	:focus: applies a style when the element is focused
+•	:before, :after: inserts content before or after the element
+Responsive design
+•	@media: applies a style based on a media query (e.g. screen size, orientation)
