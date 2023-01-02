@@ -1,0 +1,59 @@
+Basic math
+Addition: =SUM(A1+B1)
+Subtraction: =A1-B1
+Multiplication: =A1*B1
+Division: =A1/B1
+Text
+Concatenate (join together) strings: =CONCATENATE(A1, B1)
+Extract a part of a string: =LEFT(A1, 3) (first 3 characters), =RIGHT(A1, 4) (last 4 characters), =MID(A1, 2, 4) (4 characters starting from the 2nd character)
+Change case: =UPPER(A1) (all uppercase), =LOWER(A1) (all lowercase), =PROPER(A1) (first letter of each word in uppercase)
+Logical
+IF statement: =IF(A1>5, "Yes", "No")
+AND: =AND(A1>5, B1<10) (returns TRUE if both conditions are TRUE)
+OR: =OR(A1>5, B1<10) (returns TRUE if at least one condition is TRUE)
+NOT: =NOT(A1>5) (reverses the condition, returns TRUE if A1 is NOT > 5)
+Lookup and reference
+VLOOKUP: =VLOOKUP(A1, A2:B6, 2, TRUE) (looks up the value in A1 in the first column of A2:B6, and returns the value in the second column)
+HLOOKUP: =HLOOKUP(A1, A2:C2, 3, TRUE) (looks up the value in A1 in the first row of A2:C2, and returns the value in the third row)
+INDEX and MATCH: =INDEX(A2:B6, MATCH(A1, A2:A6, 0), 1) (looks up the value in A1 in the first column of A2:A6, and returns the value in the same row of the second column)
+Date and time
+Today's date: =TODAY()
+Current time: =NOW()
+Add months: =DATE(YEAR(A1), MONTH(A1)+3, DAY(A1))
+Add days: =A1+5 (5 days after the date in A1)
+Difference between two dates: =B1-A1 (number of days between the dates in A1 and B1)
+IFERROR
+•	Syntax: =IFERROR(value, value_if_error)
+•	Example: =IFERROR(A1/B1, "Error")
+SUMIF
+•	Syntax: =SUMIF(range, criteria, sum_range)
+•	Example: =SUMIF(A1:A10, ">5", B1:B10) (sums the values in B1:B10 where the corresponding value in A1:A10 is greater than 5)
+COUNTIF
+•	Syntax: =COUNTIF(range, criteria)
+•	Example: =COUNTIF(A1:A10, ">5") (counts the number of cells in A1:A10 that are greater than 5)
+AVERAGEIF
+•	Syntax: =AVERAGEIF(range, criteria, average_range)
+•	Example: =AVERAGEIF(A1:A10, ">5", B1:B10) (calculates the average of the values in B1:B10 where the corresponding value in A1:A10 is greater than 5)
+MAXIFS
+•	Syntax: =MAXIFS(max_range, criteria_range1, criteria1, criteria_range2, criteria2, ...)
+•	Example: =MAXIFS(A1:A10, B1:B10, ">5", C1:C10, "<10") (finds the maximum value in A1:A10 where the corresponding value in B1:B10 is greater than 5 and the corresponding value in C1:C10 is less than 10)
+MINIFS
+•	Syntax: =MINIFS(min_range, criteria_range1, criteria1, criteria_range2, criteria2, ...)
+NETWORKDAYS
+•	Syntax: =NETWORKDAYS(start_date, end_date, holidays)
+•	Example: =NETWORKDAYS(A1, B1, A2:A10) (calculates the number of workdays between start_date and end_date, excluding holidays)
+NETWORKDAYS.INTL
+•	Syntax: =NETWORKDAYS.INTL(start_date, end_date, weekend, holidays)
+•	Example: =NETWORKDAYS.INTL(A1, B1, "0000000", A2:A10) (calculates the number of workdays between start_date and end_date, using a custom weekend parameter and excluding holidays)
+WORKDAY
+•	Syntax: =WORKDAY(start_date, days, holidays)
+•	Example: =WORKDAY(A1, 5, A2:A10) (calculates the date that is 5 workdays after start_date, excluding holidays)
+WORKDAY.INTL
+•	Syntax: =WORKDAY.INTL(start_date, days, weekend, holidays)
+•	Example: =WORKDAY.INTL(A1, 5, "0000000", A2:A10) (calculates the date that is 5 workdays after start_date, using a custom weekend parameter and excluding holidays)
+MONTH
+•	Syntax: =MONTH(date)
+•	Example: =MONTH(A1) (returns the month of the date in A1)
+YEAR
+•	Syntax: =YEAR(date)
+•	Example: =YEAR(A1) (returns the year of the date in A1)
