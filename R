@@ -32,3 +32,51 @@
 ##### Packages
 - Install a package: `install.packages("package_name")`
 - Load a package: `library(package_name)`
+
+##### Control Structures
+- If-else statement:
+if (condition) {
+  # code
+} else {
+  # code
+}
+
+- For loop:
+for (i in seq) {
+  # code
+}
+
+- While loop:
+while (condition) {
+  # code
+}
+
+- Repeat loop:
+repeat {
+  # code
+  if (condition) {
+    break
+  }
+}
+
+##### Functions
+- Define a function:
+function_name <- function(arg1, arg2) {
+  # code
+  return(result)
+}
+
+##### Apply Functions
+- Apply a function to each element of a vector: `sapply(x, function)`
+- Apply a function to each row or column of a matrix: `apply(x, 1, function)` or `apply(x, 2, function)`
+
+##### Data Manipulation
+- Subset rows of a data frame: `subset(df, condition)`
+- Merge two data frames: `merge(df1, df2, by = "common_column")`
+- Aggregate data: `aggregate(df, by = list(df$group_column), mean)`
+
+##### Graphics
+- Scatter plot: `plot(x, y)`
+- Line plot: `plot(x, y, type = "l")`
+- Bar plot: `barplot(x)`
+- Histogram: `hist(x)`
